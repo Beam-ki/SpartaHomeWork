@@ -17,30 +17,14 @@ people = [
     ("Erik Lane", "Turkey", 30, "efumazza@va.hn"),
 ]
 
-# some code
+
+people= [x for x in range(60)]
+pprint(people)
 
 
-# people.sort(key=lambda x:x[2]) # 나이순으로 정렬 역순은 ,reverse=True 추가
-# people.sort(key=lambda x:(x[2]>20))
 # pprint(people)
 
-"""
-[('Winnie Hall', 'Palestinian Territories', 22, 'moci@pacivhe.net'),
- ('Brent Peterson', 'Svalbard & Jan Mayen', 22, 'le@wekciga.lr'),
- ('Eric Townsend', 'Svalbard & Jan Mayen', 22, 'jijer@cipzo.gp'),
- ('Inez Little', 'Namibia', 26, 'meewi@mirha.ye'),
- ('Carrie Palmer', 'Mauritius', 28, 'fenlofi@tor.aq'),
- ('Alfred Schwartz', 'Syria', 29, 'ic@tolseuc.pr'),
- ('Katharine Little', 'Anguilla', 29, 'am@kifez.et'),
- ('Peter Bowen', 'Burundi', 30, 'vinaf@rilkov.il'),
- ('Erik Lane', 'Turkey', 30, 'efumazza@va.hn')]
-"""
-people = {name: {"country":country,
-                "age": age,
-                "email":email  
-            } 
-        for name, age, country,email in people}
-pprint(people)
+
 
 
 #- filter 혹은 리스트 축약식을 사용해 코드를 작성해주세요
