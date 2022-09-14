@@ -14,6 +14,7 @@ class Profile():
     def get_email(self):
         return self.profile["email"]
 profile = Profile()
+
 profile.set_profile({
     "name": "lee",
     "gender": "man",

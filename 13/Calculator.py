@@ -1,20 +1,21 @@
-# class Calculator(n1,n2):
-def plus(n1,n2):
-        return n1+n2
-def minus(n1,n2):
-        return n1-n2
-def multiply(n1,n2):
-        return n1*n2
-def divide(n1,n2):
-        return n1/n2
-# print("계산기입니다. 두 정수를 입력해주세요. ")
+class Calc():
+    def set_number(self,number1,number2):
+        self.number1=number1
+        self.number2=number2
+    def plus(self):
+        return self.number1+self.number2
+    def minus(self):
+        return self.number1-self.number2
+    def multiply(self):
+        return self.number1*self.number2
+    def divide(self):
+        return self.number1/self.number2
+calc = Calc()
 
-n1,n2=map(int,(input(" 두 정수를 입력해주세요").split()))
-print(plus(n1,n2)) # 더한 값
-print(minus(n1,n2)) # 뺀 값
-print(multiply(n1,n2)) # 곱한 값
-print(divide(n1,n2)) # 나눈 값
-Answer_Plus =plus(n1,n2)
-Answer_Minus =minus(n1,n2)
-Answer_Multiply =multiply(n1,n2)
-Answer_Divide =divide(n1,n2)
+calc.set_number(20, 10)
+
+
+print(calc.plus()) # 더한 값
+print(calc.minus()) # 뺀 값
+print(calc.multiply()) # 곱한 값
+print(calc.divide()) # 나눈 값
