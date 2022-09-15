@@ -17,11 +17,6 @@ people = [
     ("Erik Lane", "Turkey", 30, "efumazza@va.hn"),
 ]
 
-
-people= [x for x in range(60)]
-pprint(people)
-
-
 # pprint(people)
 
 
